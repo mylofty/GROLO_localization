@@ -5,7 +5,7 @@ from TE import TE_2D
 from config import *
 from GridentDescentPy import PositionSolver
 import tensorflow as tf
-
+from initPos import dv_distance
 robot_Num = 0
 beacon_Num = 0
 
@@ -58,7 +58,7 @@ def setInitial_by_dvdistance(robots):
     :return:
     '''
     # you can also use initPos.py dv_distance() to create the dv_list
-    # dv_distance()
+    coordlist = dv_distance()
     dv_list = np.loadtxt(os.path.join(folder, dv_distance_result))
     for index in range(len(dv_list)):
         robots[index].set_coord([dv_list[index][0], dv_list[index][1]])
@@ -80,7 +80,7 @@ def localization_gradient_descent(robots, psolver, epochs=2):
     gd_list = []
     for r in robots:
         gd_list.append(r.get_coord())
-    np.savetxt("gradient_descent_result.npy", gd_list)
+    np.savetxt(os.path.join(folder, gradient_descent_result), gd_list)
 
 
 
@@ -121,7 +121,7 @@ def localizatiion_GROLO(robots, localization_Nodes):
     grolo_list = []
     for r in robots:
         grolo_list.append(r.get_coord())
-    np.savetxt("GROLO_result.npy", grolo_list)
+    np.savetxt(os.path.join(folder, GROLO_result), grolo_list)
 
 
 def main():
@@ -130,7 +130,7 @@ def main():
     points, robots = create_network_topology()
     setInitial_by_dvdistance(robots)
     parentList, distanceList, flexiblecount = TE_2D(robots)
-    localization_gradient_descent(robots, psolver,  epochs=3)
+    localization_gradient_descent(robots, psolver,  epochs=40)
     localizatiion_GROLO(robots, robot_Num - flexiblecount - beacon_Num)
 
 

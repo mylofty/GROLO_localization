@@ -1,4 +1,4 @@
-
+import os
 import numpy as np
 from config import *
 
@@ -30,7 +30,7 @@ def TE_2D(robots):
             rigidnum += 1
     print("rigid robot have %d"%rigidnum)
 
-    with open("data/parent.npy","w") as parentnpy:
+    with open(os.path.join(folder, TE_parent_filename),"w") as parentnpy:
         for r in robots:
             parentnpy.write("%d %d %d\n"%(r.id, r.parent1, r.parent2))
 

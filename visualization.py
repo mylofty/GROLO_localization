@@ -2,23 +2,16 @@ import numpy as np
 import random
 import matplotlib.pyplot as plt
 import os
+from config import *
 from mpl_toolkits.mplot3d import Axes3D
 
-# change this folder to show other situation
-folder = "data/nodes_100_beacon_5"
-
-random_node_filename = "random_nodes.npy"
-beacon_node_filename = "beacon_nodes.npy"
-
-TE_parent_filename = "parent.npy"
-
-dv_distance_result_output = "dv_distance_result.npy"
-GradientDescent_node_filename = "gradient_descent.npy"
-GROLO_node_filename = "forecast_position.npy"
+picture_folder = os.path.join(folder, 'img')
+if not os.path.exists(picture_folder):
+    os.mkdir(picture_folder)
 
 
 def compare_random_dvdistance_picture(folder=folder, random_node_filename = random_node_filename,
-                                      beacon_node_filename = beacon_node_filename, dv_distance_result = dv_distance_result_output):
+                                      beacon_node_filename = beacon_node_filename, dv_distance_result = dv_distance_result):
     '''
     create a picture to show random_nodes and dv_distance_nodes
     :param folder:  the whole data folder
@@ -67,12 +60,12 @@ def compare_random_dvdistance_picture(folder=folder, random_node_filename = rand
     rmsd = (1/len(old) * np.sum(np.sqrt((new[:, 0] - old[:, 0])**2 + (new[:, 1] - old[:, 1])**2)))**0.5
     print('rmsd is = ', rmsd)
     plt.legend()
-    plt.savefig(os.path.join(folder, "result_random_dvdistance.pdf"))
+    plt.savefig(os.path.join(picture_folder, "result_random_dvdistance.pdf"))
     plt.show()
 
 
 def compare_random_Gradient_picture(folder = folder, random_node_filename = random_node_filename,
-                                    GradientDescent_node_filename = GradientDescent_node_filename):
+                                    GradientDescent_node_filename = gradient_descent_result):
     '''
     compare origin position with GradientDescent's position
     :param folder:
@@ -121,12 +114,12 @@ def compare_random_Gradient_picture(folder = folder, random_node_filename = rand
     rmsd = (1/len(old) * np.sum(np.sqrt((new[:, 0] - old[:, 0])**2 + (new[:, 1] - old[:, 1])**2)))**0.5
     print('rmsd is = ', rmsd)
     plt.legend()
-    plt.savefig(os.path.join(folder, "result_random_GROLO.pdf"))
+    plt.savefig(os.path.join(picture_folder, "result_random_GROLO.pdf"))
     plt.show()
 
 
 def compare_random_GROLO_picture(folder = folder, random_node_filename = random_node_filename,
-                                 GROLO_node_filename = GROLO_node_filename):
+                                 GROLO_node_filename = GROLO_result):
     '''
     compare origin nodes position with GROLO localization position
     :param folder:
@@ -175,7 +168,7 @@ def compare_random_GROLO_picture(folder = folder, random_node_filename = random_
     rmsd = (1/len(old) * np.sum(np.sqrt((new[:, 0] - old[:, 0])**2 + (new[:, 1] - old[:, 1])**2)))**0.5
     print('rmsd is = ', rmsd)
     plt.legend()
-    plt.savefig(os.path.join(folder, "result_random_GROLO.pdf"))
+    plt.savefig(os.path.join(picture_folder, "result_random_GROLO.pdf"))
     plt.show()
 
 
@@ -227,14 +220,14 @@ def TExtension_picture(folder = folder, random_node_filename = random_node_filen
     rmsd = (1/len(old) * np.sum(np.sqrt((new[:, 0] - old[:, 0])**2 + (new[:, 1] - old[:, 1])**2)))**0.5
     print('rmsd is = ', rmsd)
     plt.legend()
-    plt.savefig(os.path.join(folder, "result_random_GROLO.pdf"))
+    plt.savefig(os.path.join(picture_folder, "result_random_GROLO.pdf"))
     plt.show()
 
 
 if __name__ == '__main__':
-    # compare_random_dvdistance_picture()
-    # compare_random_Gradient_picture()
-    TExtension_picture()
-    # compare_random_GROLO_picture()
+    # compare_random_dvdistance_picture(dv_distance_result = 'dv_distance.npy')
+    # compare_random_Gradient_picture(GradientDescent_node_filename = 'gradient descent.npy')
+    # TExtension_picture(TE_parent_filename = 'parent.npy')
+    compare_random_GROLO_picture()
 
 

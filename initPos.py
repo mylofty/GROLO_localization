@@ -112,6 +112,7 @@ def dv_distance():
             print('sol', index, sol)
     # print(coordlist)
     np.savetxt(os.path.join(folder, dv_distance_result), coordlist)
+    return coordlist
 
 
 if __name__ == '__main__':
