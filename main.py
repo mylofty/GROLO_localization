@@ -1,5 +1,5 @@
 from robotClass import *
-from utils import *
+from scipy.optimize import fsolve
 import os
 from TE import TE_2D
 from config import *
