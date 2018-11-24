@@ -4,13 +4,81 @@ import os
 from TE import TE_2D
 from config import *
 from GridentDescentPy import PositionSolver
+import tensorflow as tf
 
+robot_Num = 0
 beacon_Num = 0
 
 def cmp_by_value(lhs):
     return lhs[1]
 
-def set_real_position(robots, localization_Nodes):
+
+def create_network_topology():
+    '''
+    load the random nodes, create the robots object, assign  Isbeacon,
+    robots can not get the points' information. just for compare in picture!
+    :return:
+    '''
+    global beacon_Num
+    global robot_Num
+    beaconlist = np.loadtxt(os.path.join(folder, beacon_node_filename))
+    points = np.loadtxt(os.path.join(folder, random_node_filename))
+    robot_Num = points.shape[0]
+
+    robots = [Robot(id=x) for x in range(robot_Num)]
+    Beacon = np.array((beaconlist[0:len(beaconlist) - 1]), dtype=int)
+    beacon_Num = len(beaconlist) - 1
+    communication_distance = beaconlist[-1]
+    for index in Beacon:
+        robots[index].set_beacon()
+    for i in range(robot_Num):
+        for j in range(i+1, robot_Num):
+            tempDistance = np.sqrt( (points[i][0] - points[j][0])**2 + (points[i][1] - points[j][1])**2)
+            if tempDistance < communication_distance:
+                robots[i].myNeighbor.append([j, tempDistance])
+                robots[j].myNeighbor.append([i, tempDistance])
+    for r in robots:
+        r.myNeighbor = sorted(r.myNeighbor, key=cmp_by_value)
+
+        r.nei_id = []
+        for nei in r.myNeighbor:
+            rid = r.id
+            nid = nei[0]
+            r.nei_id.append(nid)
+            r.measured_distance[nid] = np.sqrt((points[rid][0]-points[nid][0])**2 +
+                    (points[rid][1]-points[nid][1])**2)
+
+    return points, robots
+
+
+def setInitial_by_dvdistance(robots):
+    '''
+    assign every robot the initial position by dv-distance
+    :param robots:
+    :return:
+    '''
+    # you can also use initPos.py dv_distance() to create the dv_list
+    # dv_distance()
+    dv_list = np.loadtxt(os.path.join(folder, dv_distance_result))
+    for index in range(len(dv_list)):
+        robots[index].set_coord([dv_list[index][0], dv_list[index][1]])
+        print('robot[{}] '.format(index), dv_list[index])
+
+
+
+def localization_gradient_descent(robots, psolver, epochs=2):
+    robot_num = len(robots)
+    for epoch in range(epochs+1):
+        print("epoch %d:------------------------------------------------" % epoch)
+        for rid in range(robot_num):
+            nei_dis = [value for value in robots[rid].measured_distance.values()]
+            nei_pos = [robots[key].get_coord() for key in robots[rid].measured_distance.keys()]
+            print('localization_ontime robot', rid)
+            robots[rid].run(psolver, neighbors=nei_pos, dists=nei_dis)
+            print("robots[%d].coord: " % rid, robots[rid].get_coord())
+
+
+def localizatiion_GROLO(robots, localization_Nodes):
     cal_nodes = 0
     for index in range(len(robots)):
         if robots[index].isBeacon == False:
@@ -44,91 +112,6 @@ def set_real_position(robots, localization_Nodes):
                 robots[index].isFinalPos = True
                 cal_nodes = cal_nodes + 1
 
-def create_network_topology():
-    '''
-    load the random nodes, create the robots object, assign  Isbeacon,
-    robots can not get the points' information. just for compare in picture!
-    :return:
-    '''
-    global beacon_Num
-    beaconlist = np.loadtxt(os.path.join(folder, beacon_node_filename))
-    points = np.loadtxt(os.path.join(folder, random_node_filename))
-    Robot_Num = points.shape[0]
-
-    robots = [Robot(id=x) for x in range(Robot_Num)]
-    Beacon = np.array((beaconlist[0:len(beaconlist) - 1]), dtype=int)
-    beacon_Num = len(beaconlist) - 1
-    communication_distance = beaconlist[-1]
-    for index in Beacon:
-        robots[index].set_beacon()
-    for i in range(Robot_Num):
-        for j in range(i+1, Robot_Num):
-            tempDistance = np.sqrt( (points[i][0] - points[j][0])**2 + (points[i][1] - points[j][1])**2)
-            if tempDistance < communication_distance:
-                robots[i].myNeighbor.append([j, tempDistance])
-                robots[j].myNeighbor.append([i, tempDistance])
-    for r in robots:
-        r.myNeighbor = sorted(r.myNeighbor, key=cmp_by_value)
-
-        r.nei_id = []
-        for nei in r.myNeighbor:
-            rid = r.id
-            nid = nei[0]
-            r.nei_id.append(nid)
-            r.measured_distance[nid] = np.sqrt((points[rid][0]-points[nid][0])**2 +
-                    (points[rid][1]-points[nid][1])**2)
-
-    return points, robots
-
-
-def setInitial_by_dvdistance(robots):
-    '''
-    assign every robot the initial position by dv-distance
-    :param robots:
-    :return:
-    '''
-    # you can also use initPos.py dv_distance() to create the dv_list
-    # dv_distance()
-    dv_list = np.loadtxt(os.path.join(folder, dv_distance_result))
-    for index in range(len(dv_list)):
-        robots[index].set_coord([dv_list[index][0], dv_list[index][1]])
-        print('robot[{}] '.format(index), dv_list[index])
-
-
-def localization_ontime_delete(robots, psolver, flexibleNum, epochs=20):
-    robot_num = len(robots)
-    i = 0
-    for epoch in range(epochs+1):
-        print("epoch %d:------------------------------------------------" % epoch)
-        # i = np.random.randint(0, robot_num)
-        nei_dis = [value for value in robots[i].measured_distance.values()]
-        nei_pos = [robots[key].get_coord() for key in robots[i].measured_distance.keys()]
-
-        if epoch > 2 and (epoch == epochs):
-            set_real_position(robots, robot_num - flexibleNum-3)
-            continue
-        print('localization_ontime robot',i)
-        robots[i].run(psolver, neighbors=nei_pos, dists=nei_dis)
-        print("robots[%d].coord: " % i, robots[i].get_coord())
-        i = i + 1
-        if (i >= robot_num):
-            i = 0
-
-
-def localization_ontime(robots, psolver, flexibleNum, epochs=2):
-    robot_num = len(robots)
-    for epoch in range(epochs+1):
-        print("epoch %d:------------------------------------------------" % epoch)
-        for rid in range(robot_num):
-            nei_dis = [value for value in robots[rid].measured_distance.values()]
-            nei_pos = [robots[key].get_coord() for key in robots[rid].measured_distance.keys()]
-            if epoch > 2 and (epoch == epochs):
-                set_real_position(robots, robot_num - flexibleNum - beacon_Num)
-                continue
-            print('localization_ontime robot', rid)
-            robots[rid].run(psolver, neighbors=nei_pos, dists=nei_dis)
-            print("robots[%d].coord: " % rid, robots[rid].get_coord())
-
 
 def main():
     sess = tf.Session()
@@ -136,7 +119,8 @@ def main():
     points, robots = create_network_topology()
     setInitial_by_dvdistance(robots)
     parentList, distanceList, flexiblecount = TE_2D(robots)
-    localization_ontime(robots, psolver, flexiblecount, epochs=3)
+    localization_gradient_descent(robots, psolver,  epochs=3)
+    localizatiion_GROLO(robots, robot_Num - flexiblecount - beacon_Num)
 
 
 if __name__ == '__main__':
