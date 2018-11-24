@@ -47,8 +47,8 @@ def triangle_extension(r, probot) :
                     # are they located on one line?
                     # if (r.locationx-nei1.locationx)*(r.locationy-nei2.locationy)!=(r.locationy-nei1.locationy)*(r.locationx-nei2.locationx):
 
-                    dis3 = np.sqrt(np.sum(np.square(np.array([nei1.get_coord()[0], nei1.get_coord()[1], nei1.z]) -
-                                                    np.array([nei2.get_coord()[0], nei2.get_coord()[1], nei2.z]))))
+                    dis3 = np.sqrt(np.sum(np.square(np.array([nei1.get_coord()[0], nei1.get_coord()[1]]) -
+                                                    np.array([nei2.get_coord()[0], nei2.get_coord()[1]]))))
 
                     if not(abs(dis3-dis1-dis2)<1e-1 or abs(dis1-dis2-dis3)<1e-1 or abs(dis2-dis1-dis3)<1e-1):
                         r.parent1 = nei1.id

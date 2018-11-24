@@ -3,14 +3,8 @@ from scipy.optimize import fsolve
 import numpy as np
 import os
 from math import *
+from config import *
 
-
-
-
-folder = "data/nodes_100_beacon_5"
-random_node_filename = "random_nodes.npy"
-beacon_node_filename = "beacon_nodes.npy"
-dv_distance_result_output = "dv_distance_result.npy"
 
 point_list = np.loadtxt(os.path.join(folder, beacon_node_filename))
 Beacon = np.array((point_list[0:len(point_list)-1]), dtype=int)
@@ -45,7 +39,7 @@ def dv_distance():
             tempDistance = np.sqrt(
                 (robot[i].posx - robot[j].posx) ** 2 + (robot[i].posy - robot[j].posy) ** 2)
             print('real tempDistance: %d' %i, tempDistance)
-            tempDistance = tempDistance + tempDistance * (np.random.random() * 0.02 - 0.01)
+            tempDistance = tempDistance  # + tempDistance * (np.random.random() * 0.02 - 0.01)  是否加噪声
             print('get tempDistance:',tempDistance)
 
             if (tempDistance < Distance):
@@ -117,7 +111,7 @@ def dv_distance():
             coordlist.append(sol)
             print('sol', index, sol)
     # print(coordlist)
-    np.savetxt(os.path.join(folder, dv_distance_result_output), coordlist)
+    np.savetxt(os.path.join(folder, dv_distance_result), coordlist)
 
 
 if __name__ == '__main__':
