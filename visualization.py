@@ -225,9 +225,10 @@ def TExtension_picture(folder = folder, random_node_filename = random_node_filen
 
 
 if __name__ == '__main__':
-    # compare_random_dvdistance_picture(dv_distance_result = 'dv_distance.npy')
-    # compare_random_Gradient_picture(GradientDescent_node_filename = 'gradient descent.npy')
+    # compare_random_dvdistance_picture()
+    compare_random_Gradient_picture(GradientDescent_node_filename = 'gradient descent.npy')
     # TExtension_picture(TE_parent_filename = 'parent.npy')
     compare_random_GROLO_picture()
 
-
+#rmsd is =  0.712323667686
+#rmsd is =  0.50904256698

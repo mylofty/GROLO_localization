@@ -39,8 +39,9 @@ def dv_distance():
             tempDistance = np.sqrt(
                 (robot[i].posx - robot[j].posx) ** 2 + (robot[i].posy - robot[j].posy) ** 2)
             print('real tempDistance: %d' %i, tempDistance)
-            tempDistance = tempDistance  # + tempDistance * (np.random.random() * 0.02 - 0.01)  是否加噪声
-            print('get tempDistance:',tempDistance)
+            np.random.seed(12345)
+            tempDistance = tempDistance # + tempDistance * (np.random.random() * 0.02 - 0.01)  #是否加噪声
+            print('get tempDistance:', tempDistance)
 
             if (tempDistance < Distance):
                 robot[i].myNeighbor.append([j, tempDistance])

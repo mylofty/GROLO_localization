@@ -1,7 +1,7 @@
 deltaT = 0.8  # time increase ratio
 time = 0  # time increase
 
-folder = "data/nodes_100_beacon_5"
+folder = "data/nodes_50_beacon_5_28"
 
 random_node_filename = "random_nodes.npy"
 beacon_node_filename = "beacon_nodes.npy"

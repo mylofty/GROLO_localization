@@ -35,8 +35,17 @@ def create_network_topology():
         for j in range(i+1, robot_Num):
             tempDistance = np.sqrt( (points[i][0] - points[j][0])**2 + (points[i][1] - points[j][1])**2)
             if tempDistance < communication_distance:
+                # robots[i].measured_distance[j] = tempDistance
+                # robots[j].measured_distance[i] = tempDistance
+
                 robots[i].myNeighbor.append([j, tempDistance])
                 robots[j].myNeighbor.append([i, tempDistance])
+    # for r in robots:
+    #     templist = sorted(r.measured_distance.items(), key=lambda d: d[1])
+    #     tempdict = {}
+    #     for item in templist:
+    #         tempdict[item[0]] = item[1]
+    #     r.measured_distance = tempdict
     for r in robots:
         r.myNeighbor = sorted(r.myNeighbor, key=cmp_by_value)
 
@@ -130,13 +139,21 @@ def main():
     points, robots = create_network_topology()
     setInitial_by_dvdistance(robots)
     parentList, distanceList, flexiblecount = TE_2D(robots)
-    localization_gradient_descent(robots, psolver,  epochs=40)
+    localization_gradient_descent(robots, psolver,  epochs=20)
     localizatiion_GROLO(robots, robot_Num - flexiblecount - beacon_Num)
 
 
 if __name__ == '__main__':
     main()
-
+    # dict1 = {"1":'jjabc', "5": "cde", "3": "efg"}
+    # print(dict1.items())
+    # list1 = sorted(dict1.items(), key=lambda d: d[1])
+    # dict2 = {}
+    # for item in list1:
+    #     dict2[item[0]] = item[1]
+    #
+    # print(type(dict2))
+    # print(dict2)
 
 
 
