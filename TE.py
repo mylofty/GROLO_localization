@@ -1,6 +1,6 @@
 
 import numpy as np
-
+from config import *
 
 def TE_2D(robots):
     RobotNum = len(robots)

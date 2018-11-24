@@ -76,6 +76,12 @@ def localization_gradient_descent(robots, psolver, epochs=2):
             print('localization_ontime robot', rid)
             robots[rid].run(psolver, neighbors=nei_pos, dists=nei_dis)
             print("robots[%d].coord: " % rid, robots[rid].get_coord())
+    # write to file gradient_descent_result.npy
+    gd_list = []
+    for r in robots:
+        gd_list.append(r.get_coord())
+    np.savetxt("gradient_descent_result.npy", gd_list)
+
 
 
 def localizatiion_GROLO(robots, localization_Nodes):
@@ -111,6 +117,11 @@ def localizatiion_GROLO(robots, localization_Nodes):
                 robots[index].set_coord([sol[0], sol[1]])
                 robots[index].isFinalPos = True
                 cal_nodes = cal_nodes + 1
+    # write to file GROLO_result.npy
+    grolo_list = []
+    for r in robots:
+        grolo_list.append(r.get_coord())
+    np.savetxt("GROLO_result.npy", grolo_list)
 
 
 def main():
