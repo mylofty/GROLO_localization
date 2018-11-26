@@ -35,17 +35,8 @@ def create_network_topology():
         for j in range(i+1, robot_Num):
             tempDistance = np.sqrt( (points[i][0] - points[j][0])**2 + (points[i][1] - points[j][1])**2)
             if tempDistance < communication_distance:
-                # robots[i].measured_distance[j] = tempDistance
-                # robots[j].measured_distance[i] = tempDistance
-
                 robots[i].myNeighbor.append([j, tempDistance])
                 robots[j].myNeighbor.append([i, tempDistance])
-    # for r in robots:
-    #     templist = sorted(r.measured_distance.items(), key=lambda d: d[1])
-    #     tempdict = {}
-    #     for item in templist:
-    #         tempdict[item[0]] = item[1]
-    #     r.measured_distance = tempdict
     for r in robots:
         r.myNeighbor = sorted(r.myNeighbor, key=cmp_by_value)
 
@@ -54,8 +45,8 @@ def create_network_topology():
             rid = r.id
             nid = nei[0]
             r.nei_id.append(nid)
-            r.measured_distance[nid] = np.sqrt((points[rid][0]-points[nid][0])**2 +
-                    (points[rid][1]-points[nid][1])**2)
+            r.measured_distance[nid] = nei[1]
+
 
     return points, robots
 

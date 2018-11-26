@@ -58,7 +58,7 @@ def compare_random_dvdistance_picture(folder=folder, random_node_filename = rand
 
 
     rmsd = (1/len(old) * np.sum(np.sqrt((new[:, 0] - old[:, 0])**2 + (new[:, 1] - old[:, 1])**2)))**0.5
-    print('rmsd is = ', rmsd)
+    print('dv-distance rmsd is = ', rmsd)
     plt.legend()
     plt.savefig(os.path.join(picture_folder, "result_random_dvdistance.pdf"))
     plt.show()
@@ -112,7 +112,7 @@ def compare_random_Gradient_picture(folder = folder, random_node_filename = rand
 
 
     rmsd = (1/len(old) * np.sum(np.sqrt((new[:, 0] - old[:, 0])**2 + (new[:, 1] - old[:, 1])**2)))**0.5
-    print('rmsd is = ', rmsd)
+    print('Gradient descent rmsd is = ', rmsd)
     plt.legend()
     plt.savefig(os.path.join(picture_folder, "result_random_GROLO.pdf"))
     plt.show()
@@ -166,7 +166,7 @@ def compare_random_GROLO_picture(folder = folder, random_node_filename = random_
 
 
     rmsd = (1/len(old) * np.sum(np.sqrt((new[:, 0] - old[:, 0])**2 + (new[:, 1] - old[:, 1])**2)))**0.5
-    print('rmsd is = ', rmsd)
+    print('random and GROLO rmsd is = ', rmsd)
     plt.legend()
     plt.savefig(os.path.join(picture_folder, "result_random_GROLO.pdf"))
     plt.show()
@@ -182,7 +182,7 @@ def TExtension_picture(folder = folder, random_node_filename = random_node_filen
     old = np.loadtxt(os.path.join(folder, random_node_filename))
     # ./Testdata/nodes_100_beacon_5_25/
     # new = np.loadtxt('gradient_descent.npy')
-    new = np.loadtxt(os.path.join(folder, 'forecast_position.npy'))
+    # new = np.loadtxt(os.path.join(folder, 'forecast_position.npy'))
     # new = np.loadtxt('dv_distance.npy')
     parent = np.loadtxt(os.path.join(folder, TE_parent_filename))
     # plt.title('nodes\' number is 150 \nglobal node is 147,beacon is 12,49,60 ')
@@ -217,18 +217,14 @@ def TExtension_picture(folder = folder, random_node_filename = random_node_filen
     # # show label
     # for i in range(len(old)):
     #     plt.annotate(s=i, xy=(old[i, 0], old[i, 1]), xytext=(-5, 5), textcoords='offset points')
-    rmsd = (1/len(old) * np.sum(np.sqrt((new[:, 0] - old[:, 0])**2 + (new[:, 1] - old[:, 1])**2)))**0.5
-    print('rmsd is = ', rmsd)
     plt.legend()
     plt.savefig(os.path.join(picture_folder, "result_random_GROLO.pdf"))
     plt.show()
 
 
 if __name__ == '__main__':
-    # compare_random_dvdistance_picture()
-    compare_random_Gradient_picture(GradientDescent_node_filename = 'gradient descent.npy')
-    # TExtension_picture(TE_parent_filename = 'parent.npy')
+    compare_random_dvdistance_picture()
+    compare_random_Gradient_picture()
+    TExtension_picture()
     compare_random_GROLO_picture()
 
-#rmsd is =  0.712323667686
-#rmsd is =  0.50904256698
