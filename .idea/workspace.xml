@@ -2,11 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cccecc1-9cb2-4b8a-8432-d83b97008474" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/data/nodes_100_beacon_10_18/beacon_nodes.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/nodes_100_beacon_5_18/beacon_nodes.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/nodes_100_beacon_8_18/beacon_nodes.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/nodes_150_beacon_8_18/beacon_nodes.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/nodes_50_beacon_3_20/beacon_nodes.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/nodes_50_beacon_4_20/beacon_nodes.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/nodes_50_beacon_5_20/beacon_nodes.npy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GROLO_result.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/create_nodes.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/create_nodes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/nodes_50_beacon_5_28/GROLO_result.npy" beforeDir="false" afterPath="$PROJECT_DIR$/data/nodes_50_beacon_5_28/GROLO_result.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/nodes_50_beacon_5_28/TE_parent.npy" beforeDir="false" afterPath="$PROJECT_DIR$/data/nodes_50_beacon_5_28/TE_parent.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/nodes_50_beacon_5_28/dv_distance_result.npy" beforeDir="false" afterPath="$PROJECT_DIR$/data/nodes_50_beacon_5_28/dv_distance_result.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/nodes_50_beacon_5_28/gradient_descent_result.npy" beforeDir="false" afterPath="$PROJECT_DIR$/data/nodes_50_beacon_5_28/gradient_descent_result.npy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/nodes_50_beacon_5_28/img/result_random_GROLO.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/data/nodes_50_beacon_5_28/img/result_random_GROLO.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/nodes_50_beacon_5_28/img/result_random_dvdistance.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/data/nodes_50_beacon_5_28/img/result_random_dvdistance.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/nodes_50_beacon_5_28/result_random_dvdistance.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/parent.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradient_descent_result.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/initPos.py" beforeDir="false" afterPath="$PROJECT_DIR$/initPos.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/triangle_extension_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/triangle_extension_file.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/visualization.py" beforeDir="false" afterPath="$PROJECT_DIR$/visualization.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +41,8 @@
       <file leaf-file-name="robotClass.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/robotClass.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+            <state relative-caret-position="264">
+              <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
               <folding>
                 <element signature="e#1#19#0" expanded="true" />
               </folding>
@@ -36,8 +53,8 @@
       <file leaf-file-name="TE.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TE.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+            <state relative-caret-position="1078">
+              <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -45,32 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="triangle_extension_file.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/triangle_extension_file.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="9" column="39" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GridentDescentPy.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GridentDescentPy.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1144">
-              <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="visualization.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="visualization.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/visualization.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
+            <state relative-caret-position="231">
+              <caret line="219" column="18" lean-forward="true" selection-start-line="219" selection-start-column="18" selection-end-line="219" selection-end-column="18" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -81,8 +77,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+            <state relative-caret-position="204">
+              <caret line="102" column="41" lean-forward="true" selection-start-line="102" selection-start-column="41" selection-end-line="102" selection-end-column="41" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -90,11 +86,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="initPos.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="create_nodes.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/create_nodes.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="beacon_nodes.npy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/nodes_150_beacon_8_18/beacon_nodes.npy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="2" selection-start-column="2" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="triangle_extension_file.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/triangle_extension_file.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="68" column="9" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="initPos.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/initPos.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="42" column="39" lean-forward="true" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
+            <state relative-caret-position="352">
+              <caret line="85" column="55" selection-start-line="85" selection-start-column="55" selection-end-line="85" selection-end-column="55" />
               <folding>
                 <element signature="e#24#57#0" expanded="true" />
               </folding>
@@ -102,16 +128,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+            <state relative-caret-position="110">
+              <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -134,10 +155,10 @@
       <find>list</find>
       <find>Beacon</find>
       <find>TE_2D</find>
+      <find>nei_id</find>
       <find>coord is</find>
       <find>myNeighbor</find>
       <find>measured_distance</find>
-      <find>nei_id</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -146,22 +167,28 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/data/create_nodes.py" />
         <option value="$PROJECT_DIR$/tensor_position.py" />
         <option value="$PROJECT_DIR$/mainProcess.py" />
         <option value="$PROJECT_DIR$/hexapodRobotImpl.py" />
         <option value="$PROJECT_DIR$/hexapodRobot.py" />
         <option value="$PROJECT_DIR$/Robot.py" />
-        <option value="$PROJECT_DIR$/triangle_extension_file.py" />
         <option value="$PROJECT_DIR$/GridentDescentPy.py" />
         <option value="$PROJECT_DIR$/robotClass.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/utils.py" />
         <option value="$PROJECT_DIR$/TE.py" />
+        <option value="$PROJECT_DIR$/data/nodes_50_beacon_3_20/beacon_nodes.npy" />
+        <option value="$PROJECT_DIR$/data/nodes_50_beacon_4_20/beacon_nodes.npy" />
+        <option value="$PROJECT_DIR$/data/nodes_50_beacon_5_20/beacon_nodes.npy" />
+        <option value="$PROJECT_DIR$/triangle_extension_file.py" />
+        <option value="$PROJECT_DIR$/visualization.py" />
+        <option value="$PROJECT_DIR$/data/nodes_100_beacon_5_18/beacon_nodes.npy" />
+        <option value="$PROJECT_DIR$/data/nodes_100_beacon_10_18/beacon_nodes.npy" />
         <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/initPos.py" />
+        <option value="$PROJECT_DIR$/data/create_nodes.py" />
+        <option value="$PROJECT_DIR$/data/nodes_150_beacon_8_18/beacon_nodes.npy" />
         <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/visualization.py" />
       </list>
     </option>
   </component>
@@ -192,13 +219,26 @@
               <item name="GROLO_localization" type="b2602c69:ProjectViewProjectNode" />
               <item name="GROLO_localization" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="nodes_50_beacon_5_28" type="462c0819:PsiDirectoryNode" />
+              <item name="nodes_100_beacon_8_18" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GROLO_localization" type="b2602c69:ProjectViewProjectNode" />
               <item name="GROLO_localization" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="nodes_100_beacon_5" type="462c0819:PsiDirectoryNode" />
+              <item name="nodes_100_beacon_8_18" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GROLO_localization" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GROLO_localization" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="nodes_100_beacon_10_18" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GROLO_localization" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GROLO_localization" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="nodes_150_beacon_8_18" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -208,6 +248,13 @@
     </panes>
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data/nodes_150_beacon_8_18" />
+      <recent name="$PROJECT_DIR$/data/nodes_100_beacon_10_18" />
+      <recent name="$PROJECT_DIR$/data/nodes_100_beacon_8_18" />
+      <recent name="$PROJECT_DIR$/data/nodes_100_beacon_5_18" />
+      <recent name="$PROJECT_DIR$/data/nodes_50_beacon_5_20" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/data/nodes_100_beacon_5/img" />
     </key>
@@ -225,7 +272,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.visualization">
-    <configuration name="GridentDescentPy" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="config" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="GROLO_localization" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -237,7 +284,25 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GridentDescentPy.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/config.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="create_nodes" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="GROLO_localization" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data/create_nodes.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -279,24 +344,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="robotClass" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="GROLO_localization" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/robotClass.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="visualization" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="GROLO_localization" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -318,17 +365,17 @@
     <list>
       <item itemvalue="Python.initPos" />
       <item itemvalue="Python.visualization" />
-      <item itemvalue="Python.robotClass" />
       <item itemvalue="Python.main" />
-      <item itemvalue="Python.GridentDescentPy" />
+      <item itemvalue="Python.create_nodes" />
+      <item itemvalue="Python.config" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.visualization" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.create_nodes" />
         <item itemvalue="Python.initPos" />
-        <item itemvalue="Python.GridentDescentPy" />
-        <item itemvalue="Python.robotClass" />
+        <item itemvalue="Python.config" />
       </list>
     </recent_temporary>
   </component>
@@ -354,14 +401,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1651" height="931" extended-state="6" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49921995" visible="true" weight="0.20613497" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49921995" visible="true" weight="0.18320611" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.3294979" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.19302616" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.31485355" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.1830635" />
       <window_info anchor="bottom" id="Python Console" order="0" />
       <window_info id="Structure" order="2" sideWeight="0.50078005" side_tool="true" weight="0.18320611" />
@@ -423,9 +470,6 @@
     <entry file="file://$PROJECT_DIR$/data/nodes_100_beacon_5/random_nodes.npy">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/nodes_100_beacon_5/beacon_nodes.npy">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/nodes_100_beacon_5/dv_distance.npy">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -479,16 +523,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/create_nodes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Robot.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
@@ -527,29 +561,6 @@
     <entry file="file://$PROJECT_DIR$/GROLO_result.npy">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/gradient_descent_result.npy">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/robotClass.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-          <folding>
-            <element signature="e#1#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GridentDescentPy.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1144">
@@ -560,17 +571,122 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/nodes_50_beacon_3_20/beacon_nodes.npy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TE.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1078">
+          <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/nodes_50_beacon_4_20/beacon_nodes.npy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/nodes_50_beacon_5_20/beacon_nodes.npy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robotClass.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+          <folding>
+            <element signature="e#1#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/nodes_100_beacon_5_18/beacon_nodes.npy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/nodes_100_beacon_8_18/beacon_nodes.npy">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/nodes_100_beacon_10_18/beacon_nodes.npy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/nodes_100_beacon_5/beacon_nodes.npy">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/initPos.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="85" column="55" selection-start-line="85" selection-start-column="55" selection-end-line="85" selection-end-column="55" />
+          <folding>
+            <element signature="e#24#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/create_nodes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradient_descent_result.npy">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/nodes_150_beacon_8_18/beacon_nodes.npy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" selection-start-column="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/triangle_extension_file.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="39" />
+        <state relative-caret-position="374">
+          <caret line="68" column="9" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        <state relative-caret-position="204">
+          <caret line="102" column="41" lean-forward="true" selection-start-line="102" selection-start-column="41" selection-end-line="102" selection-end-column="41" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
@@ -579,30 +695,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/visualization.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
+        <state relative-caret-position="231">
+          <caret line="219" column="18" lean-forward="true" selection-start-line="219" selection-start-column="18" selection-end-line="219" selection-end-column="18" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TE.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/initPos.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="42" column="39" lean-forward="true" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
-          <folding>
-            <element signature="e#24#57#0" expanded="true" />
           </folding>
         </state>
       </provider>

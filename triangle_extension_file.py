@@ -3,7 +3,7 @@ import numpy as np
 # triangle extension for Robot r
 
 def triangle_extension(r, probot) :
-    if r.state==0 :
+    if r.state==0:
         flag0 = True
         print("now get case 0")
 
@@ -63,8 +63,12 @@ def triangle_extension(r, probot) :
 
                 if nei1.state == 2 and nei2.state == 3 or nei1.state == 3 and nei2.state == 2:   # some problem,delete it!!
                     print('nei1 id is %d, nei2 id is %d'% (nei1.id, nei2.id))
+                    print('nei2.distance_to(nei1.id) ', nei2.distance_to(nei1.id))
+                    print('nei1.distance_to(nei2.id) ', nei1.distance_to(nei2.id))
                     dis3 = nei1.distance_to(nei2.id) or nei2.distance_to(nei1.id)
-                    if not(abs(dis3-dis1-dis2)<1e-1 or abs(dis1-dis2-dis3)<1e-1 or abs(dis2-dis1-dis3)<1e-1):
+                    print('dis3 is', dis3, nei1.distance_to(nei2.id), nei2.distance_to(nei1.id))
+                    if True or not(abs(dis3-dis1-dis2)<1e-1 or abs(dis1-dis2-dis3)<1e-1 or abs(dis2-dis1-dis3)<1e-1):
+
                         r.parent1 = nei1.id
                         r.parent2 = nei2.id
                         if nei1.state == 2:

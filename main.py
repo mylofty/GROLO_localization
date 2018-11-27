@@ -33,7 +33,9 @@ def create_network_topology():
         robots[index].set_beacon()
     for i in range(robot_Num):
         for j in range(i+1, robot_Num):
+            np.random.seed(12345)
             tempDistance = np.sqrt( (points[i][0] - points[j][0])**2 + (points[i][1] - points[j][1])**2)
+            # tempDistance = tempDistance + tempDistance * (np.random.random() * 0.02 - 0.01)  # 是否加噪声
             if tempDistance < communication_distance:
                 robots[i].myNeighbor.append([j, tempDistance])
                 robots[j].myNeighbor.append([i, tempDistance])
@@ -130,21 +132,12 @@ def main():
     points, robots = create_network_topology()
     setInitial_by_dvdistance(robots)
     parentList, distanceList, flexiblecount = TE_2D(robots)
-    localization_gradient_descent(robots, psolver,  epochs=20)
+    localization_gradient_descent(robots, psolver,  epochs=30)
     localizatiion_GROLO(robots, robot_Num - flexiblecount - beacon_Num)
 
 
 if __name__ == '__main__':
     main()
-    # dict1 = {"1":'jjabc', "5": "cde", "3": "efg"}
-    # print(dict1.items())
-    # list1 = sorted(dict1.items(), key=lambda d: d[1])
-    # dict2 = {}
-    # for item in list1:
-    #     dict2[item[0]] = item[1]
-    #
-    # print(type(dict2))
-    # print(dict2)
 
 
 

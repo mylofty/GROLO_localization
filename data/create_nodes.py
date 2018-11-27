@@ -1,6 +1,9 @@
 import numpy as np
 import random
 import matplotlib.pyplot as plt
+import os
+from config import *
+
 
 
 def create_map(nodeNum, mapSize):
@@ -21,11 +24,14 @@ def create_map(nodeNum, mapSize):
     lz = [0 for i in range(nodeNum)]
     arr= np.column_stack((arr, lz))
     plt.scatter(arr[:, 0], arr[:, 1], c='b')
-    np.savetxt('random_nodes.npy', arr)
+    folder_now = os.path.basename(folder)
+    if not os.path.exists(folder_now):
+        os.makedirs(folder_now)
+    np.savetxt(os.path.join(folder_now, random_node_filename), arr)
     for i in range(nodeNum):
         plt.annotate(s=i, xy=(arr[i, 0], arr[i, 1]), xytext=(-5, 5), textcoords='offset points')
     plt.show()
 
 
 if __name__ == '__main__':
-    create_map(50, 100)
+    create_map(150, 100)

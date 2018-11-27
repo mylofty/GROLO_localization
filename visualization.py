@@ -20,6 +20,7 @@ def compare_random_dvdistance_picture(folder=folder, random_node_filename = rand
     :return:
     '''
     plt.figure(figsize=(8, 6))
+    plt.title('compare: dv_distance')
     list = np.loadtxt(os.path.join(folder, beacon_node_filename))
     Beacon1List = np.array(list[0:len(list)-1], dtype=int)
     old = np.loadtxt(os.path.join(folder, random_node_filename))
@@ -74,6 +75,7 @@ def compare_random_Gradient_picture(folder = folder, random_node_filename = rand
     :return:
     '''
     plt.figure(figsize=(8, 6))
+    plt.title('compare: gradient_descent')
     list = np.loadtxt(os.path.join(folder, beacon_node_filename))
     Beacon1List = np.array(list[0:len(list)-1], dtype=int)
     old = np.loadtxt(os.path.join(folder, random_node_filename))
@@ -128,6 +130,7 @@ def compare_random_GROLO_picture(folder = folder, random_node_filename = random_
     :return:
     '''
     plt.figure(figsize=(8, 6))
+    plt.title('compare: GROLO')
     list = np.loadtxt(os.path.join(folder, beacon_node_filename))
     Beacon1List = np.array(list[0:len(list)-1], dtype=int)
     old = np.loadtxt(os.path.join(folder, random_node_filename))
