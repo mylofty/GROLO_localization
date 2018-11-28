@@ -40,7 +40,7 @@ def dv_distance():
                 (robot[i].posx - robot[j].posx) ** 2 + (robot[i].posy - robot[j].posy) ** 2)
             print('real tempDistance: %d' %i, tempDistance)
             np.random.seed(12345)
-            tempDistance = tempDistance + tempDistance * (np.random.random() * 0.02 - 0.01)  #是否加噪声
+            # tempDistance = tempDistance + tempDistance * (np.random.random() * 0.02 - 0.01)  #是否加噪声
             print('get tempDistance:', tempDistance)
 
             if (tempDistance < Distance):
