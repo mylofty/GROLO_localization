@@ -1,6 +1,7 @@
 from robotClass import *
 from scipy.optimize import fsolve
 import os
+import math
 from TE import TE_2D
 from config import *
 from GridentDescentPy import PositionSolver
@@ -128,11 +129,11 @@ def localizatiion_GROLO(robots, localization_Nodes):
 
 def main():
     sess = tf.Session()
-    psolver = PositionSolver(sess, 50, 0.05)
+    psolver = PositionSolver(sess, 50, 0.02)
     points, robots = create_network_topology()
     setInitial_by_dvdistance(robots)
     parentList, distanceList, flexiblecount = TE_2D(robots)
-    localization_gradient_descent(robots, psolver,  epochs=30)
+    localization_gradient_descent(robots, psolver,  epochs=25)
     localizatiion_GROLO(robots, robot_Num - flexiblecount - beacon_Num)
 
 

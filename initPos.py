@@ -93,22 +93,23 @@ def dv_distance():
             dis3 = beacon_sort[2, 1]
             b3x = robot[int(beacon_sort[2, 0])].posx
             b3y = robot[int(beacon_sort[2, 0])].posy
-
+            if index == 0:
+                print('distance with beacon1, beacon2, beacon3: ', dis1, dis2, dis3)
             if dis1 > 900 or dis2 > 900 or dis3 > 900:
                 print('node %d can not connect with beacon' % index)
+                sol = [-1, -1.1]
+            else:
+                def function(r):
+                    x = r[0]
+                    y = r[1]
+                    return [
+                        2 * (b1x - b2x) * x + 2 * (b1y - b2y) * y - dis2 ** 2 + dis1 ** 2 +
+                        b2x ** 2 - b1x ** 2 + b2y ** 2 - b1y ** 2,
+                        2 * (b1x - b3x) * x + 2 * (b1y - b3y) * y - dis3 ** 2 + dis1 ** 2 +
+                        b3x ** 2 - b1x ** 2 + b3y ** 2 - b1y ** 2
+                    ]
+                sol = fsolve(function, np.array([1, 1]), xtol=1e-5)
 
-            def function(r):
-                x = r[0]
-                y = r[1]
-                return [
-                    2 * (b1x - b2x) * x + 2 * (b1y - b2y) * y - dis2 ** 2 + dis1 ** 2 +
-                    b2x ** 2 - b1x ** 2 + b2y ** 2 - b1y ** 2,
-                    2 * (b1x - b3x) * x + 2 * (b1y - b3y) * y - dis3 ** 2 + dis1 ** 2 +
-                    b3x ** 2 - b1x ** 2 + b3y ** 2 - b1y ** 2
-                ]
-            if index == 0:
-                print('distance with beacon1, beacon2, beacon3: ',dis1, dis2, dis3)
-            sol = fsolve(function, np.array([1, 1]), xtol=1e-5)
             coordlist.append(sol)
             print('sol', index, sol)
     # print(coordlist)

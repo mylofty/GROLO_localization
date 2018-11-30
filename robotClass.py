@@ -1,4 +1,4 @@
-
+import math
 import numpy as np
 from matplotlib import pyplot as plt
 from triangle_extension_file import triangle_extension
@@ -56,16 +56,21 @@ class Robot(object):
             return
         if neighbors is None or neighbors == []:
             return
+        # print('neighbor ', neighbors)
+        # print('distss ', dists)
+        # print('origin coord', self.coord)
         coord, loss = psolver.solver(self.coord, neighbors, dists)
         print('loss is ', loss)
-        self.set_coord(coord)
-        self.loss_dump.append(loss)
+        assert not math.isnan(loss)
+        if not math.isnan(coord[0]):
+            self.set_coord(coord)
+            self.loss_dump.append(loss)
 
     def show_loss_curve(self):
         plt.figure(10)
         print('loss_dump is', self.loss_dump)
         length = len(self.loss_dump)
-        print('curve length is ',length)
+        print('curve length is ', length)
         plt.annotate(s=round(self.loss_dump[length-1], 2), xy=((length-1)*self.epoch, self.loss_dump[length-1]), xytext=(-5, 5),
                      textcoords='offset points')
         # plt.annotate(s=round(self.loss_dump[length - 2], 2), xy=((length - 2)*self.epoch, self.loss_dump[length - 2]), xytext=(-5, 5),

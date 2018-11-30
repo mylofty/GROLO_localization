@@ -34,4 +34,4 @@ def create_map(nodeNum, mapSize):
 
 
 if __name__ == '__main__':
-    create_map(150, 100)
+    create_map(350, 100)

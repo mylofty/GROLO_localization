@@ -2,6 +2,9 @@ import numpy as np
 
 # triangle extension for Robot r
 
+
+Collinear = 0.5
+
 def triangle_extension(r, probot) :
     if r.state==0:
         flag0 = True
@@ -26,7 +29,7 @@ def triangle_extension(r, probot) :
                     # print(nei1.id, nei2.id)
 
                     dis3 = nei1.distance_to(nei2.id) or nei2.distance_to(nei1.id)
-                    if not(abs(dis3-dis1-dis2)<1e-1 or abs(dis1-dis2-dis3)<1e-1 or abs(dis2-dis1-dis3)<1e-1):
+                    if not(abs(dis3-dis1-dis2)<Collinear or abs(dis1-dis2-dis3)<Collinear or abs(dis2-dis1-dis3)<Collinear):
                         r.parent1 = nei1.id
                         r.parent2 = nei2.id
 
@@ -50,7 +53,7 @@ def triangle_extension(r, probot) :
                     dis3 = np.sqrt(np.sum(np.square(np.array([nei1.get_coord()[0], nei1.get_coord()[1]]) -
                                                     np.array([nei2.get_coord()[0], nei2.get_coord()[1]]))))
 
-                    if not(abs(dis3-dis1-dis2)<1e-1 or abs(dis1-dis2-dis3)<1e-1 or abs(dis2-dis1-dis3)<1e-1):
+                    if not(abs(dis3-dis1-dis2)<Collinear or abs(dis1-dis2-dis3)<Collinear or abs(dis2-dis1-dis3)<Collinear):
                         r.parent1 = nei1.id
                         r.parent2 = nei2.id
 
@@ -65,7 +68,7 @@ def triangle_extension(r, probot) :
                     dis3 = np.sqrt(np.sum(np.square(np.array([nei1.get_coord()[0], nei1.get_coord()[1]]) -
                                                     np.array([nei2.get_coord()[0], nei2.get_coord()[1]]))))
                     print('dis3 is', dis3, nei1.distance_to(nei2.id), nei2.distance_to(nei1.id))
-                    if not(abs(dis3-dis1-dis2)<1e-1 or abs(dis1-dis2-dis3)<1e-1 or abs(dis2-dis1-dis3)<1e-1):
+                    if not(abs(dis3-dis1-dis2)<Collinear or abs(dis1-dis2-dis3)<Collinear or abs(dis2-dis1-dis3)<Collinear):
 
                         r.parent1 = nei1.id
                         r.parent2 = nei2.id

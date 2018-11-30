@@ -221,7 +221,7 @@ def TExtension_picture(folder = folder, random_node_filename = random_node_filen
     # for i in range(len(old)):
     #     plt.annotate(s=i, xy=(old[i, 0], old[i, 1]), xytext=(-5, 5), textcoords='offset points')
     plt.legend()
-    plt.savefig(os.path.join(picture_folder, "result_random_GROLO.pdf"))
+    plt.savefig(os.path.join(picture_folder, "result_TE.pdf"))
     plt.show()
 
 
