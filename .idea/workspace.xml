@@ -2,32 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cccecc1-9cb2-4b8a-8432-d83b97008474" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/data/nodes_50_beacon_5_28_more_parents/beacon_nodes.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/nodes_50_beacon_5_28_more_parents/random_nodes.npy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/change_beacon.eps" beforeDir="false" afterPath="$PROJECT_DIR$/change_beacon.eps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/change_beacon.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/change_beacon.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/nodes_100_beacon_10_18/GROLO_result.npy" beforeDir="false" afterPath="$PROJECT_DIR$/data/nodes_100_beacon_10_18/GROLO_result.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/nodes_100_beacon_10_18/TE_parent.npy" beforeDir="false" afterPath="$PROJECT_DIR$/data/nodes_100_beacon_10_18/TE_parent.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/nodes_100_beacon_10_18/gradient_descent_result.npy" beforeDir="false" afterPath="$PROJECT_DIR$/data/nodes_100_beacon_10_18/gradient_descent_result.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/nodes_100_beacon_10_18/img/result_random_GROLO.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/data/nodes_100_beacon_10_18/img/result_random_GROLO.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/nodes_100_beacon_10_18/img/result_random_dvdistance.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/data/nodes_100_beacon_10_18/img/result_random_dvdistance.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/nodes_100_beacon_5/img/result_random_GROLO.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/data/nodes_100_beacon_5/img/result_random_GROLO.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/nodes_100_beacon_5/img/result_random_dvdistance.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/data/nodes_100_beacon_5/img/result_random_dvdistance.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/nodes_100_beacon_8_12/GROLO_result.npy" beforeDir="false" afterPath="$PROJECT_DIR$/data/nodes_100_beacon_8_12/GROLO_result.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/nodes_100_beacon_8_12/TE_parent.npy" beforeDir="false" afterPath="$PROJECT_DIR$/data/nodes_100_beacon_8_12/TE_parent.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/nodes_100_beacon_8_12/dv_distance_result.npy" beforeDir="false" afterPath="$PROJECT_DIR$/data/nodes_100_beacon_8_12/dv_distance_result.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/nodes_100_beacon_8_12/gradient_descent_result.npy" beforeDir="false" afterPath="$PROJECT_DIR$/data/nodes_100_beacon_8_12/gradient_descent_result.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/nodes_100_beacon_8_12/img/result_random_GROLO.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/data/nodes_100_beacon_8_12/img/result_random_GROLO.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/nodes_100_beacon_8_12/img/result_random_dvdistance.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/data/nodes_100_beacon_8_12/img/result_random_dvdistance.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/nodes_250_beacon_30_12/GROLO_result.npy" beforeDir="false" afterPath="$PROJECT_DIR$/data/nodes_250_beacon_30_12/GROLO_result.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/nodes_250_beacon_30_12/gradient_descent_result.npy" beforeDir="false" afterPath="$PROJECT_DIR$/data/nodes_250_beacon_30_12/gradient_descent_result.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/nodes_250_beacon_30_12/img/result_random_GROLO.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/data/nodes_250_beacon_30_12/img/result_random_GROLO.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/nodes_250_beacon_30_12/img/result_random_dvdistance.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/data/nodes_250_beacon_30_12/img/result_random_dvdistance.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/show_communication_dis_12.py" beforeDir="false" afterPath="$PROJECT_DIR$/show_communication_dis_12.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visualization.py" beforeDir="false" afterPath="$PROJECT_DIR$/visualization.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,8 +19,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="352">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -53,7 +28,7 @@
       <file leaf-file-name="GridentDescentPy.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GridentDescentPy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
+            <state relative-caret-position="1144">
               <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
@@ -62,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="visualization.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="visualization.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/visualization.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="109" selection-start-line="109" selection-end-line="109" />
+            <state relative-caret-position="57">
+              <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -83,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="config.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="110">
-              <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+              <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -95,7 +70,7 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-23">
+            <state relative-caret-position="2618">
               <caret line="127" selection-start-line="127" selection-end-line="127" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
@@ -107,11 +82,8 @@
       <file leaf-file-name="main_more_parents.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main_more_parents.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4186">
+            <state relative-caret-position="66">
               <caret line="11" selection-start-line="11" selection-end-line="11" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -197,8 +169,8 @@
         <option value="$PROJECT_DIR$/show_communication_dis_12.py" />
         <option value="$PROJECT_DIR$/robotClass_more_parents.py" />
         <option value="$PROJECT_DIR$/main_more_parents.py" />
-        <option value="$PROJECT_DIR$/visualization.py" />
         <option value="$PROJECT_DIR$/config.py" />
+        <option value="$PROJECT_DIR$/visualization.py" />
       </list>
     </option>
   </component>
@@ -225,19 +197,6 @@
               <item name="GROLO_localization" type="b2602c69:ProjectViewProjectNode" />
               <item name="GROLO_localization" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GROLO_localization" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GROLO_localization" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="nodes_50_beacon_5_28_more_parents" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GROLO_localization" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GROLO_localization" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="nodes_50_beacon_5_28_more_parents" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GROLO_localization" type="b2602c69:ProjectViewProjectNode" />
@@ -415,15 +374,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
+    <frame x="64" y="-11" width="1653" height="939" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49921995" visible="true" weight="0.21919303" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49921995" visible="true" weight="0.2190184" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.1830635" />
       <window_info anchor="bottom" id="Python Console" order="0" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.37343097" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.37235367" />
       <window_info id="Structure" order="2" sideWeight="0.50078005" side_tool="true" weight="0.18320611" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info id="Favorites" order="0" sideWeight="0.50078005" side_tool="true" weight="0.18320611" />
@@ -439,21 +398,21 @@
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49921995" weight="0.006134969" />
       <window_info id="Structure" order="2" sideWeight="0.50078005" side_tool="true" weight="0.18320611" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="3" weight="0.1830635" />
       <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.33872977" />
-      <window_info anchor="bottom" id="Find" order="5" weight="0.3294979" />
-      <window_info anchor="bottom" id="Python Console" order="0" />
+      <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="3" weight="0.1830635" />
-      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info id="Favorites" order="0" sideWeight="0.50078005" side_tool="true" weight="0.18320611" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.3294979" />
+      <window_info anchor="bottom" id="Python Console" order="0" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -746,9 +705,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -766,21 +722,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/triangle_extension_file_more_parents.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/GridentDescentPy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
+        <state relative-caret-position="1144">
           <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/nodes_50_beacon_5_28_more_parents/random_nodes.npy">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/robotClass_more_parents.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -798,24 +748,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main_more_parents.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4186">
+        <state relative-caret-position="66">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="352">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-23">
+        <state relative-caret-position="2618">
           <caret line="127" selection-start-line="127" selection-end-line="127" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
@@ -823,20 +770,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/visualization.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="109" selection-start-line="109" selection-end-line="109" />
+        <state relative-caret-position="57">
+          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/nodes_100_beacon_5/img/result_random_GROLO.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/nodes_100_beacon_5/img/result_random_dvdistance.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
         </state>
       </provider>
     </entry>
