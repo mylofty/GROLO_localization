@@ -116,7 +116,7 @@ def compare_random_Gradient_picture(folder = folder, random_node_filename = rand
     rmsd = (1/len(old) * np.sum(np.sqrt((new[:, 0] - old[:, 0])**2 + (new[:, 1] - old[:, 1])**2)))**0.5
     print('Gradient descent rmsd is = ', rmsd)
     plt.legend()
-    plt.savefig(os.path.join(picture_folder, "result_random_GROLO.pdf"))
+    plt.savefig(os.path.join(picture_folder, "result_random_gradient.pdf"))
     plt.show()
 
 
@@ -228,6 +228,6 @@ def TExtension_picture(folder = folder, random_node_filename = random_node_filen
 if __name__ == '__main__':
     compare_random_dvdistance_picture()
     compare_random_Gradient_picture()
-    TExtension_picture()
+    # TExtension_picture()
     compare_random_GROLO_picture()
 
