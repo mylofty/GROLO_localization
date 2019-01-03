@@ -2,27 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cccecc1-9cb2-4b8a-8432-d83b97008474" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/data/nodes_100_beacon_5_12_more_parents/beacon_nodes.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/nodes_100_beacon_5_12_more_parents/random_nodes.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/nodes_150_beacon_8_12_more_parents/beacon_nodes.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/nodes_150_beacon_8_12_more_parents/random_nodes.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/nodes_200_beacon_10_12_more_parents/beacon_nodes.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/nodes_200_beacon_10_12_more_parents/random_nodes.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/nodes_250_beacon_13_12_more_parents/beacon_nodes.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/nodes_250_beacon_13_12_more_parents/random_nodes.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/nodes_300_beacon_15_12_more_parents/beacon_nodes.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/nodes_300_beacon_15_12_more_parents/random_nodes.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/nodes_350_beacon_18_12_more_parents/beacon_nodes.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/nodes_350_beacon_18_12_more_parents/random_nodes.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/nodes_350_beacon_18_12_more_parents/super_beacons" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/nodes_400_beacon_20_12_more_parents/beacon_nodes.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/nodes_450_beacon_23_12_more_parents/beacon_nodes.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/nodes_50_beacon_3_12_more_parents/beacon_nodes.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/nodes_50_beacon_3_12_more_parents/random_nodes.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/create_nodes.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/create_nodes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_more_parents.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_more_parents.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/nodes_450_beacon_23_12_more_parents_2/beacon_nodes.npy" beforeDir="false" afterPath="$PROJECT_DIR$/data/nodes_450_beacon_23_12_more_parents_2/beacon_nodes.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/nodes_450_beacon_23_12_more_parents_3/beacon_nodes.npy" beforeDir="false" afterPath="$PROJECT_DIR$/data/nodes_450_beacon_23_12_more_parents_3/beacon_nodes.npy" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,14 +17,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="visualization.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="visualization.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/visualization.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="147">
-              <caret line="217" column="17" lean-forward="true" selection-start-line="217" selection-start-column="17" selection-end-line="217" selection-end-column="17" />
+              <caret line="217" column="17" selection-start-line="217" selection-start-column="17" selection-end-line="217" selection-end-column="17" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="beacon_nodes.npy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/nodes_450_beacon_23_12_more_parents/beacon_nodes.npy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="beacon_nodes.npy" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data/nodes_450_beacon_23_12_more_parents_2/beacon_nodes.npy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="484">
+              <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -146,8 +145,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/hexapodRobot.py" />
-        <option value="$PROJECT_DIR$/Robot.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/utils.py" />
         <option value="$PROJECT_DIR$/TE.py" />
@@ -197,6 +194,8 @@
         <option value="$PROJECT_DIR$/data/nodes_400_beacon_20_12_more_parents_2/beacon_nodes.npy" />
         <option value="$PROJECT_DIR$/data/nodes_400_beacon_20_12_more_parents_3/beacon_nodes.npy" />
         <option value="$PROJECT_DIR$/config.py" />
+        <option value="$PROJECT_DIR$/data/nodes_450_beacon_23_12_more_parents_3/beacon_nodes.npy" />
+        <option value="$PROJECT_DIR$/data/nodes_450_beacon_23_12_more_parents_2/beacon_nodes.npy" />
       </list>
     </option>
   </component>
@@ -235,6 +234,18 @@
               <item name="GROLO_localization" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
               <item name="nodes_450_beacon_23_12_more_parents" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GROLO_localization" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GROLO_localization" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="nodes_450_beacon_23_12_more_parents_2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GROLO_localization" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GROLO_localization" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="nodes_450_beacon_23_12_more_parents_3" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -402,12 +413,12 @@
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49921995" visible="true" weight="0.22028354" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49921995" visible="true" weight="0.22028354" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.1830635" />
       <window_info anchor="bottom" id="Python Console" order="0" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.3420502" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.3420502" />
       <window_info id="Structure" order="2" sideWeight="0.50078005" side_tool="true" weight="0.18320611" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info id="Favorites" order="0" sideWeight="0.50078005" side_tool="true" weight="0.18320611" />
@@ -494,20 +505,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="260" column="29" selection-start-line="260" selection-start-column="29" selection-end-line="260" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/tensorflow/python/client/session.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="873" column="71" lean-forward="true" selection-start-line="873" selection-start-column="71" selection-end-line="873" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/tensorflow/python/training/gradient_descent.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -785,13 +782,6 @@
     <entry file="file://$PROJECT_DIR$/data/nodes_400_beacon_20_12_more_parents_3/random_nodes.npy">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/nodes_450_beacon_23_12_more_parents/beacon_nodes.npy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/create_nodes.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="403">
@@ -816,13 +806,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/nodes_450_beacon_23_12_more_parents_3/beacon_nodes.npy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/visualization.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
-          <caret line="217" column="17" lean-forward="true" selection-start-line="217" selection-start-column="17" selection-end-line="217" selection-end-column="17" />
+          <caret line="217" column="17" selection-start-line="217" selection-start-column="17" selection-end-line="217" selection-end-column="17" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/nodes_450_beacon_23_12_more_parents/beacon_nodes.npy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/nodes_450_beacon_23_12_more_parents_2/beacon_nodes.npy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
         </state>
       </provider>
     </entry>
