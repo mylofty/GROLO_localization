@@ -206,7 +206,7 @@ def main():
     points, robots = create_network_topology()
     setInitial_by_dvdistance(robots)
     parentList, distanceList, flexiblecount = TE_2D(robots)
-    localization_gradient_descent(robots, psolver,  epochs=15)
+    localization_gradient_descent(robots, psolver,  epochs=45)
     localizatiion_GROLO_moreparent(robots, robot_Num - flexiblecount - beacon_Num)
 
 

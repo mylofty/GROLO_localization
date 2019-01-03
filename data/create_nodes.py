@@ -13,7 +13,7 @@ def create_map(nodeNum, mapSize):
     :param mapSize:
     :return:
     '''
-    random.seed(15)
+    random.seed(15) # or 16 , 17
     lx = list(range(mapSize* 10))
     ly = list(range(mapSize* 10))
     random.shuffle(lx)
@@ -34,4 +34,4 @@ def create_map(nodeNum, mapSize):
 
 
 if __name__ == '__main__':
-    create_map(350, 100)
+    create_map(450, 100)
