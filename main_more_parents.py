@@ -1,3 +1,4 @@
+# _*_coding:utf-8_*_
 from robotClass_more_parents import *
 from scipy.optimize import fsolve,leastsq
 import os
