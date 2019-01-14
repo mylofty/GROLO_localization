@@ -7,7 +7,7 @@ from TE_more_parents import TE_2D
 from config import *
 from GridentDescentPy import PositionSolver
 import tensorflow as tf
-from initPos import dv_distance
+from dv_distance_file import dv_distance
 robot_Num = 0
 beacon_Num = 0
 
@@ -207,7 +207,7 @@ def main():
     points, robots = create_network_topology()
     setInitial_by_dvdistance(robots)
     parentList, distanceList, flexiblecount = TE_2D(robots)
-    localization_gradient_descent(robots, psolver,  epochs=45)
+    localization_gradient_descent(robots, psolver,  epochs=40)
     localizatiion_GROLO_moreparent(robots, robot_Num - flexiblecount - beacon_Num)
 
 

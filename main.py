@@ -6,7 +6,7 @@ from TE import TE_2D
 from config import *
 from GridentDescentPy import PositionSolver
 import tensorflow as tf
-from initPos import dv_distance
+from dv_distance_file import dv_distance
 robot_Num = 0
 beacon_Num = 0
 
