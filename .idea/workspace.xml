@@ -257,7 +257,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.show_diff_beacon">
+  <component name="RunManager" selected="Python.main_more_parents">
     <configuration name="main_more_parents" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="GROLO_localization" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -271,6 +271,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main_more_parents.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="robotClass_more_parents" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="GROLO_localization" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/robotClass_more_parents.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -312,24 +330,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="visualization" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="GROLO_localization" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/visualization.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="py.test for MDS_MAP.test" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="GROLO_localization" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -345,19 +345,19 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
     <list>
-      <item itemvalue="Python.visualization" />
       <item itemvalue="Python.main_more_parents" />
       <item itemvalue="Python tests.py.test for MDS_MAP.test" />
       <item itemvalue="Python.show_diff_beacon" />
       <item itemvalue="Python.show_communication_dis_12" />
+      <item itemvalue="Python.robotClass_more_parents" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main_more_parents" />
+        <item itemvalue="Python.robotClass_more_parents" />
         <item itemvalue="Python.show_diff_beacon" />
         <item itemvalue="Python.show_communication_dis_12" />
         <item itemvalue="Python tests.py.test for MDS_MAP.test" />
-        <item itemvalue="Python.main_more_parents" />
-        <item itemvalue="Python.visualization" />
       </list>
     </recent_temporary>
   </component>

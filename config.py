@@ -3,7 +3,7 @@ import os
 deltaT = 0.8  # time increase ratio
 time = 0  # time increase
 
-folder = "diff_beacon_data/nodes_400_beacon_20_12_more_parents_10"
+folder = "data/nodes_50_beacon_5_28_more_parents"
 
 random_node_filename = "random_nodes.npy"
 beacon_node_filename = "beacon_nodes.npy"
