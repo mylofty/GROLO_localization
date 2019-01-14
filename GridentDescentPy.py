@@ -19,7 +19,7 @@ class PositionSolver(object):
         self.reduced_loss = tf.reduce_sum(self.losses)
 
         self.optimizer = tf.train.GradientDescentOptimizer(learning_rate=lrn)
-        self.train_op, self.grads_and_vars = self.optimizer.minimize(self.reduced_loss)
+        self.train_op= self.optimizer.minimize(self.reduced_loss)
         sess.run(tf.global_variables_initializer())
         sess.run(tf.local_variables_initializer())
 
@@ -47,8 +47,7 @@ class PositionSolver(object):
         # print('neighbor coord is', nei)
         # print('nei_dis is ', dis)
         for i in range(self.steps):
-            _,grads_and_vars, coord, loss, obtainDistance = self.sess.run([self.train_op,
-                                                            self.grads_and_vars,
+            _, coord, loss, obtainDistance = self.sess.run([self.train_op,
                                             self.coord,
                                             self.reduced_loss,
                                             self.obtainDist
