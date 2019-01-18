@@ -35,7 +35,7 @@ this is 5 beacon, 50 nodes in 100 * 100 size of space, communicate distance is 2
 
 3. we find  the communication range setting to  ![](https://latex.codecogs.com/gif.latex?2.5\times\sqrt{(S/n)}) is better, and the selection of beacon is important, but it is easy for mobile device.
 END!
-
+END!
 
 
 
